@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="assets/css/styles.css">
     <link
       rel="icon"
       href="resources/favicon.ico"
@@ -15,26 +15,6 @@
 
     <!--You are welcome to delete these styles or modify them in your own stylesheet -->
     <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        height: 100vh;
-      }
-
-      .author-info {
-        font-size: 14px;
-        text-align: center;
-        margin-top: 16px;
-        color: rgb(55, 65, 81);
-      }
-
-      .author-info a {
-        text-decoration: none;
-      }
     </style>
   </head>
   <body>
@@ -74,13 +54,51 @@
     Graphic Design
 
     Step 3 of 3
-     -->
-
+    -->
+    
+    <!-- Add stylesheet and js file to html doc -->
+    <!-- Create basic HTML structure for each page -->
+    <!-- Add basic styling and spacing -->
+    <!-- Add interactivity using eventhandlers and js
+            - page 1: onChange(), onClick(); check inputs for correct formatting
+            - page 2: onClick(), onClick()
+            - page 3: no inputs, onClick()
+            - page 4: success!
+    -->
+    <!-- Add colors, fonts, more advance styling, background images, etc. -->
+    <div class="container">
+      <div class="form-card">
+        <!-- <form action=""> -->
+          <div id="page-1">
+            <h2 class="form-title">Register</h2>
+            <div class="inputs">
+              <label for="name-input">Name</label>
+              <input type="text" placeholder="Enter your name">
+              <label for="name-input">Email</label>
+              <input type="email" placeholder="Example@gmail.com">
+            </div>
+            <button class="continue-btn">Continue</button>
+          </div>
+          <div id="page-2"></div>
+          <div id="page-3"></div>
+          <div id="page-4"></div>
+        <!-- </form> -->
+      </div>
+      <div>
+        <label for="page-counter">Step 1 of 3</label>
+        <input type="radio" checked>
+        <input type="radio">
+        <input type="radio">
+      </div>
+    </div>
+  </body>
+  <footer>
     <div class="author-info">
-      Coded by <a href="#">Your Name Here</a> | Challenge by
+      Coded by <a href="#">Dara Cline</a> | Challenge by
       <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
         >devChallenges.io</a
       >.
     </div>
-  </body>
+  </footer>
+  <script></script>
 </html>
