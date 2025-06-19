@@ -64,13 +64,14 @@
             - page 2: onClick(), onClick()
             - page 3: no inputs, onClick()
             - page 4: success!
+            - NOTE: all pages don't have to be stored here; we can insert the info via js
     -->
     <!-- Add colors, fonts, more advance styling, background images, etc. -->
     <div class="container">
       <div class="form-card">
         <!-- <form action=""> -->
           <div id="page-1">
-            <h2 class="form-title">Register</h2>
+            <h2>Register</h2>
             <div class="inputs">
               <label for="name-input">Name</label>
               <input id="name-input" type="text" placeholder="Enter your name">
@@ -80,18 +81,32 @@
             <button class="continue-btn">Continue</button>
           </div>
           <div id="page-2">
-            <h2 class="form-question">Which topics you are interested in?</h2>
+            <h2>Which topics you are interested in?</h2>
             <div class="inputs">
               <label for="sw-development">Software Development</label>
               <input id="sw-development" type="checkbox">
-              <label for="ui-ux">User Experience</label>
-              <input id="ui-ux" type="checkbox">
+              <label for="user-xp">User Experience</label>
+              <input id="user-xp" type="checkbox">
               <label for="graphic-design">Graphic Design</label>
               <input id="graphic-design" type="checkbox">
             </div>
             <button class="continue-btn">Continue</button>
           </div>
-          <div id="page-3"></div>
+          <div id="page-3">
+
+            <h2>Summary</h2>
+            <div class="inputs">
+              <p>Name: <span>words</span></p>
+              <p>Email: <span>words</span></p>
+              <br>
+              <p>Topics</p>
+              <ul>
+                <li>UX</li>
+                <li>GD</li>
+              </ul>
+            </div>
+            <button class="submit-btn">Continue</button>
+          </div>
           <div id="page-4"></div>
         <!-- </form> -->
       </div>
