@@ -19,3 +19,50 @@ body {
 .author-info a {
   text-decoration: none;
 }
+
+.container {
+  padding: 15% 30%;
+}
+
+.form-card {
+  border: 1px black solid;
+  padding: 5%;
+  height: 350px;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.page h2 {
+  /* align-self: flex-start; */
+
+}
+
+.page button {
+  width: 100px;
+}
+
+#page-2 {
+  display: none;
+}
+
+#page-3 {
+  display: none;
+}
+
+.page-notator {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.page-counter {
+  padding-right: 10px;
+}
+
+input[type="radio"] {
+  margin: 0 5px;
+}

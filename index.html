@@ -70,17 +70,21 @@
     <div class="container">
       <div class="form-card">
         <!-- <form action=""> -->
-          <div id="page-1">
+          <div id="page-1" class="page page-1">
             <h2>Register</h2>
             <div class="inputs">
-              <label for="name-input">Name</label>
-              <input id="name-input" type="text" placeholder="Enter your name">
-              <label for="email-input">Email</label>
-              <input id="email-input" type="email" placeholder="Example@gmail.com">
+              <div class="name-inputs">
+                <label for="name-input">Name</label>
+                <input id="name-input" type="text" placeholder="Enter your name">
+              </div>
+              <div class="email-inputs">
+                <label for="email-input">Email</label>
+                <input id="email-input" type="email" placeholder="Example@gmail.com">
+              </div>
             </div>
             <button class="continue-btn">Continue</button>
           </div>
-          <div id="page-2">
+          <div id="page-2" class="page page-2">
             <h2>Which topics you are interested in?</h2>
             <div class="inputs">
               <label for="sw-development">Software Development</label>
@@ -92,7 +96,7 @@
             </div>
             <button class="continue-btn">Continue</button>
           </div>
-          <div id="page-3">
+          <div id="page-3" class="page page-3">
 
             <h2>Summary</h2>
             <div class="inputs">
@@ -110,11 +114,13 @@
           <div id="page-4"></div>
         <!-- </form> -->
       </div>
-      <div>
-        <label for="page-counter">Step 1 of 3</label>
-        <input type="radio" checked>
-        <input type="radio">
-        <input type="radio">
+      <div class="page-notator">
+        <div class="page-counter">Step 1 of 3</div>
+        <!-- <div id="page-indicators" class="page-indicators"> -->
+          <input name="page-indicator pg-1" type="radio" checked>
+          <input name="page-indicator pg-2" type="radio">
+          <input name="page-indicator pg-3" type="radio">
+        <!-- </div> -->
       </div>
     </div>
   </body>
